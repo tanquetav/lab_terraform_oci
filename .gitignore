@@ -1,0 +1,87 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform lockfile
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Crash log files
+crash.log
+
+# Exclude all .tfvars files, which are likely to contain sentitive data, such as
+# password, private keys, and other secrets. These should not be part of version
+# control as they are data points which are potentially sensitive and subject
+# to change depending on the environment.
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Lambda directories
+builds/
+__pycache__/
+
+id_rsa*
+.DS_Store
+target
+*.iml
+.idea
+!.idea/runConfigurations
+.settings
+.project
+.classpath
+.vscode/
+*~
+local-test
+out
+lib
+bin
+!devtools/cli/distribution/java-binary/bin
+dependency-reduced-pom.xml
+derby.log
+hotspot.log
+.directory
+.java-version
+.graal-install
+hs_err_pid*.log
+dumps
+*.orig
+*.rej
+.factorypath
+graph-output.dot
+*.swp
+*.swo
+ObjectStore
+.gradle
+docker/distroless/bazel-*
+/.apt_generated_tests/
+quarkus.log
+quarkus.log*
+replay_*.logß
+nbactions.xml
+nb-configuration.xml
+.cache
+/lsp/
+.sdkmanrc
+.envrc
+.jekyll-cache
+
+*.jar
+.mvn
+
+*.log
+*.log.*
+
+promtail
