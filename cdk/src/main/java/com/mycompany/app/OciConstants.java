@@ -9,4 +9,6 @@ public class OciConstants {
     public static String version                = "0.0.5";
     public static String cidrBlock             = "10.0.0.0/16";
 
+    public static String workDir               = "/home/george/projs/talk/function/";
+
 }
