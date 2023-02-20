@@ -22,5 +22,7 @@ public class MainStack extends TerraformStack
         CloudRegistry cloudRegistry = new CloudRegistry(this, cloudInput.getFunctionName(), cloudCompartment.getCompartment());
 
         CloudDocker cloudDocker = new CloudDocker(this, cloudInput.getFunctionName(), cloudInput.getOcirUsername(), cloudInput.getOcirPassword(), cloudRegistry.getRegistry() );
+
+        CloudNetwork cloudNetwork = new CloudNetwork( this, cloudCompartment.getCompartment());
     }
 }
