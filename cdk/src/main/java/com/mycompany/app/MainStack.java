@@ -26,5 +26,7 @@ public class MainStack extends TerraformStack
         CloudNetwork cloudNetwork = new CloudNetwork( this, cloudCompartment.getCompartment());
 
         CloudFunction cloudFunction = new CloudFunction(this, cloudInput.getFunctionName(), cloudCompartment.getCompartment(), cloudNetwork.getSubnet(), cloudDocker.getBuildandpush() );
+
+        CloudApiGateway cloudApiGateway = new CloudApiGateway(this, cloudInput.getFunctionName(), cloudCompartment.getCompartment(), cloudNetwork.getSubnet(), cloudFunction.getFunction() );
     }
 }
